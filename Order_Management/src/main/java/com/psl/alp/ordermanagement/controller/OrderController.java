@@ -41,7 +41,7 @@ public class OrderController {
 		return orderService.getOrderById(orderId);
 	}
 	
-	@GetMapping("/licenses/{licenseId}")
+	@GetMapping("/orders/licenses/{licenseId}")
 	public List<LicenseStatus> getLicenseById(@PathVariable long licenseId) {
 		return orderService.getLicenseById(licenseId);
 	}
@@ -52,7 +52,7 @@ public class OrderController {
 		orderService.deleteOrder(orderId);
 	}
 
-	@PutMapping("/license_keys/{licenseKey}")
+	@PutMapping("/orders/license_keys/{licenseKey}")
 	public LicenseStatus updateStatus(@PathVariable String licenseKey) {	
 		return orderService.updateStatus(licenseKey);
 	}
