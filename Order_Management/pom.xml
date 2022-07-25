@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.psl.alp</groupId>
-	<artifactId>Order_Management</artifactId>
+	<artifactId>Order-Management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Order_Management</name>
+	<name>Order-Management</name>
 	<description>ALP - Order Management Microservice</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -96,6 +96,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>order-management-docker</finalName>
 	</build>
 
 </project>

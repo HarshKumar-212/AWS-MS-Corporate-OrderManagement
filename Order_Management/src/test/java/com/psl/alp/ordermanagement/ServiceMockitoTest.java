@@ -7,7 +7,6 @@ import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -37,8 +36,11 @@ public class ServiceMockitoTest {
 	@Test
 	public void createOrderTest() {
 		Order order = new Order(0,10);
-		when(orderRepository.save(order)).thenReturn(order);
-		assertEquals(order, orderService.createOrder(order));
+//		when(orderRepository.save(order)).thenReturn(order);
+//		assertEquals(order, orderService.createOrder(order));
+		
+		orderService.createOrder(order);
+		verify(orderRepository, times(1)).save(order);
 	}
 	
 	
