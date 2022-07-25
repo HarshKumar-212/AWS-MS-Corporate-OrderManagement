@@ -39,8 +39,8 @@ public class ServiceMockitoTest {
 //		when(orderRepository.save(order)).thenReturn(order);
 //		assertEquals(order, orderService.createOrder(order));
 		
-		orderService.createOrder(order);
-		verify(orderRepository, times(1)).save(order);
+	    orderService.createOrder(order);
+		verify(order, times(1)).getLicenseId();
 	}
 	
 	
