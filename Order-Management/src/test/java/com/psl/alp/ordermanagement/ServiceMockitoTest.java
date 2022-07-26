@@ -35,12 +35,10 @@ public class ServiceMockitoTest {
 
 	@Test
 	public void createOrderTest() {
-		Order order = new Order(0,10);
-//		when(orderRepository.save(order)).thenReturn(order);
-//		assertEquals(order, orderService.createOrder(order));
+		Order order = new Order(1,10);
+		when(orderRepository.save(order)).thenReturn(order);
+		assertEquals(order, orderService.createOrder(order));
 		
-	    orderService.createOrder(order);
-		verify(order, times(1)).getLicenseId();
 	}
 	
 	
