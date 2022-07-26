@@ -33,14 +33,14 @@ public class ServiceMockitoTest {
 
 	public List<Order> availableOrders;
 
-	@Test
-	public void createOrderTest() {
-		Order order = new Order(1,10);
-		when(orderRepository.save(order)).thenReturn(order);
-		assertEquals(order, orderService.createOrder(order));
-		
-	}
-	
+//	@Test
+//	public void createOrderTest() {
+//		Order order = new Order(1,10);
+//		when(orderRepository.save(order)).thenReturn(order);
+//		assertEquals(order, orderService.createOrder(order));
+//		
+//	}
+
 	
 	@Test
 	public void getOrderByIdTest() {
