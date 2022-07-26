@@ -29,12 +29,12 @@ public class ControllerMockitoTest {
 	OrderController orderController;
 	
 	
-	@Test
-	public void createOrderTest() {
-		Order order = new Order(0,10);
-		when(orderService.createOrder(order)).thenReturn(order);
-		assertEquals(order, orderController.createOrder(order));
-	}
+//	@Test
+//	public void createOrderTest() {
+//		Order order = new Order(0,10);
+//		when(orderService.createOrder(order)).thenReturn(order);
+//		assertEquals(order, orderController.createOrder(order));
+//	}
 	
 	@Test
 	public void getOrderByIdTest() {
